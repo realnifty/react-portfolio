@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Nav from "./components/Nav";
 
 function App() {
+  const [tabs] = useState([
+    {
+      name: "about",
+      description: "a brief summary of me"
+    },
+    {
+      name: "portfolio",
+      description: "a collection of some my projects"
+    },
+    {
+      name: "contact",
+      description: "get in touch with me here"
+    },
+    {
+      name: "resume",
+      description: "download my resume for a full list of my skills"
+    }
+  ])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+
+    </main>
   );
 }
 
