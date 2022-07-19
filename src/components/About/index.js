@@ -10,6 +10,7 @@ function About() {
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus incidunt natus, quidem nihil ipsam molestiae, nostrum, ullam iusto ut illo voluptas cupiditate! Possimus iure magnam inventore nemo delectus, quia architecto.
             </p>
         </section>
+        
     )
 }
 

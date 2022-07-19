@@ -1,7 +1,8 @@
 import React, {useState} from "react";
 import Nav from "./components/Nav";
-import About from "./components/About"
-import Contact from "./components/Contact"
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Portfolio from "./components/Portfolio";
 
 function App() {
   const [tabs] = useState([
@@ -19,6 +20,15 @@ function App() {
 
   const [currentTab, setCurrentTab] = useState(tabs[0]);
 
+  const render = () => {
+    if (currentTab === tabs[0]) {
+      return <Portfolio />;
+    }
+    // if (currentPage === "Resume") {
+    //   return <Resume />;
+    // }
+  };
+
   return (
     <div>
       <Nav
@@ -28,7 +38,9 @@ function App() {
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}>
       </Nav>
+      
       <main>
+        {render()}
         {!contactSelected ? (
           <>
             <About></About>

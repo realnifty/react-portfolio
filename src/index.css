@@ -31,3 +31,16 @@ body {
 .submit {
     background-color: var(--secondary);
 }
+
+.nav-active {
+    color: var(--secondary) !important;
+}
+
+.project-img {
+    width: 40rem !important;
+    height: auto;
+}
+
+.cover {
+    background-size: cover;
+}
