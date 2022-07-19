@@ -1,20 +1,13 @@
 import React, {useState} from "react";
 import Nav from "./components/Nav";
 import About from "./components/About"
+import Contact from "./components/Contact"
 
 function App() {
   const [tabs] = useState([
     {
-      name: "about",
-      description: "a brief summary of me",
-    },
-    {
       name: "portfolio",
       description: "a collection of some my projects",
-    },
-    {
-      name: "contact",
-      description: "get in touch with me here",
     },
     {
       name: "resume",
@@ -36,14 +29,13 @@ function App() {
         setContactSelected={setContactSelected}>
       </Nav>
       <main>
-        {/* {!contactSelected ? (
+        {!contactSelected ? (
           <>
             <About></About>
           </>
         ) : (
-          <ContactForm></ContactForm>
-        )} */}
-        <About></About>
+          <Contact></Contact>
+        )}
       </main>
     </div>
   )
