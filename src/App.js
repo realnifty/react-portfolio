@@ -8,27 +8,32 @@ import Resume from "./components/Resume";
 function App() {
   const [tabs] = useState([
     {
+      name: "",
+      description: ""
+    },
+    {
       name: "portfolio",
       description: "a collection of some my projects",
     },
     {
       name: "resume",
       description: "download my resume for a full list of my skills",
-    },
+    }
   ]);
 
   const [contactSelected, setContactSelected] = useState(false);
 
   const [currentTab, setCurrentTab] = useState(tabs[0]);
 
-  const render = () => {
-    if (currentTab === tabs[0]) {
-      return <Portfolio />;
-    }
+  const render =(currentTab) => {
     if (currentTab === tabs[1]) {
-      return <Resume />;
+      return <Portfolio></Portfolio>
     }
-  };
+    else if (currentTab === tabs[2]) {
+      return <Resume></Resume>
+    }
+  }
+
 
   return (
     <div>
@@ -41,7 +46,7 @@ function App() {
       </Nav>
       
       <main>
-        {render()}
+        {render(currentTab)}
         {!contactSelected ? (
           <>
             <About></About>

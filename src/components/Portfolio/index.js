@@ -33,7 +33,7 @@ function Portfolio() {
     ]
 
     return (
-        <div id='portfolio' className="d-flex my-5">
+        <div className="d-flex my-5">
             {projects.map((project, index) => (
                 <div key={index} className="card w-25 mx-4" >
                     <img src={project.image} className="card-img-top" alt="..." />

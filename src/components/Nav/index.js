@@ -38,7 +38,7 @@ function Nav(props) {
           {tabs.map((tab) => (
             <li
               className={`mx-2 text-light ${
-                currentTab.name === tab.name && !contactSelected && `navActive`
+                currentTab.name === tab.name && !contactSelected && `nav-active`
               }`}
               key={tab.name}>
               <span
