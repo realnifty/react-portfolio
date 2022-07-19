@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
+import Resume from "./components/Resume";
 
 function App() {
   const [tabs] = useState([
@@ -24,9 +25,9 @@ function App() {
     if (currentTab === tabs[0]) {
       return <Portfolio />;
     }
-    // if (currentPage === "Resume") {
-    //   return <Resume />;
-    // }
+    if (currentTab === tabs[1]) {
+      return <Resume />;
+    }
   };
 
   return (
