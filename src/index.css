@@ -13,6 +13,11 @@ body {
     background-color: var(--primary);
 }
 
+.icon {
+    width: 4rem !important;
+    height: auto;
+}
+
 .no-text-deco {
     text-decoration: none !important;
 }

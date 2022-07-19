@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import Nav from "./components/Nav";
+import About from "./components/About"
 
 function App() {
   const [tabs] = useState([
@@ -34,8 +35,16 @@ function App() {
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}>
       </Nav>
-    <main>
-    </main>
+      <main>
+        {/* {!contactSelected ? (
+          <>
+            <About></About>
+          </>
+        ) : (
+          <ContactForm></ContactForm>
+        )} */}
+        <About></About>
+      </main>
     </div>
   )
 }
