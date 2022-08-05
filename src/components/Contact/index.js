@@ -38,7 +38,7 @@ function Contact() {
   }
 
   return (
-    <section className="text-light w-75 mx-auto my-5">
+    <section id="contact" className="text-light w-75 mx-auto my-5">
       <h1>Contact</h1>
       <form id="contact-form">
         <div className="form-group my-2">
